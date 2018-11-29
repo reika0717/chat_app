@@ -17,37 +17,47 @@
 
 // Signs-in Friendly Chat.
 function signIn() {
-  // TODO 1: Sign in Firebase with credential from the Google user.
+  // Sign into Firebase using popup auth & Google as the identity provider.
+  var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider);  
 }
 
 // Signs-out of Friendly Chat.
 function signOut() {
-  // TODO 2: Sign out of Firebase.
+  // Sign out of Firebase.
+  firebase.auth().signOut();
 }
 
 // Initiate firebase auth.
 function initFirebaseAuth() {
-  // TODO 3: Initialize Firebase.
+  // Listen to auth state changes.
+  firebase.auth().onAuthStateChanged(authStateObserver);
 }
 
 // Returns the signed-in user's profile Pic URL.
 function getProfilePicUrl() {
-  // TODO 4: Return the user's profile pic URL.
-}
+  return firebase.auth().currentUser.photoURL || '/images/profile_placeholder.png';}
 
 // Returns the signed-in user's display name.
 function getUserName() {
-  // TODO 5: Return the user's display name.
+  return firebase.auth().currentUser.displayName;
 }
 
 // Returns true if a user is signed-in.
 function isUserSignedIn() {
-  // TODO 6: Return true if a user is signed-in.
+  return !!firebase.auth().currentUser;
 }
 
 // Loads chat messages history and listens for upcoming ones.
 function loadMessages() {
-  // TODO 7: Load and listens for new messages.
+  // Loads the last 12 messages and listens for new ones.
+  var callback = function(snap) {
+    var data = snap.val();
+    displayMessage(snap.key, data.name, data.text, data.profilePicUrl, data.imageUrl);
+  };
+
+  firebase.database().ref('/messages/').limitToLast(12).on('child_added', callback);
+  firebase.database().ref('/messages/').limitToLast(12).on('child_changed', callback);
 }
 
 // Saves a new message on the Firebase DB.
