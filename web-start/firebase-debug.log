@@ -1,37 +1,70 @@
-[debug] [2018-11-28T00:36:15.247Z] ----------------------------------------------------------------------
-[debug] [2018-11-28T00:36:15.249Z] Command:       /Users/hirahara/.nodebrew/node/v10.2.0/bin/node /Users/hirahara/.nodebrew/current/bin/firebase serve
-[debug] [2018-11-28T00:36:15.249Z] CLI Version:   6.1.1
-[debug] [2018-11-28T00:36:15.249Z] Platform:      darwin
-[debug] [2018-11-28T00:36:15.249Z] Node Version:  v10.2.0
-[debug] [2018-11-28T00:36:15.250Z] Time:          Wed Nov 28 2018 09:36:15 GMT+0900 (JST)
-[debug] [2018-11-28T00:36:15.250Z] ----------------------------------------------------------------------
+[debug] [2018-12-03T00:51:53.535Z] ----------------------------------------------------------------------
+[debug] [2018-12-03T00:51:53.537Z] Command:       /Users/hirahara/.nodebrew/node/v10.2.0/bin/node /Users/hirahara/.nodebrew/current/bin/firebase serve
+[debug] [2018-12-03T00:51:53.537Z] CLI Version:   6.1.1
+[debug] [2018-12-03T00:51:53.537Z] Platform:      darwin
+[debug] [2018-12-03T00:51:53.537Z] Node Version:  v10.2.0
+[debug] [2018-12-03T00:51:53.537Z] Time:          Mon Dec 03 2018 09:51:53 GMT+0900 (JST)
+[debug] [2018-12-03T00:51:53.537Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-11-28T00:36:15.259Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-11-28T00:36:15.260Z] > authorizing via signed-in user
-[debug] [2018-11-28T00:36:15.260Z] [iam] checking project friendlychat-fc999 for permissions ["firebase.projects.get"]
-[debug] [2018-11-28T00:36:15.261Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-11-28T00:36:15.262Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2018-11-28T00:36:15.456Z] <<< HTTP RESPONSE 200
-[debug] [2018-11-28T00:36:15.471Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-fc999:testIamPermissions  
+[debug] [2018-12-03T00:51:53.549Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-03T00:51:53.549Z] > authorizing via signed-in user
+[debug] [2018-12-03T00:51:53.549Z] [iam] checking project friendlychat-fc999 for permissions ["firebase.projects.get"]
+[debug] [2018-12-03T00:51:53.551Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-fc999:testIamPermissions  
 
-[debug] [2018-11-28T00:36:16.268Z] <<< HTTP RESPONSE 200
-[debug] [2018-11-28T00:36:16.269Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-fc999  
+[debug] [2018-12-03T00:51:54.395Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-03T00:51:54.396Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-fc999  
  
-[debug] [2018-11-28T00:36:16.998Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-03T00:51:55.212Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/hirahara/Desktop/firebase_training/friendlychat/web-start'...
 [info] 
 [info] i  functions: Preparing to emulate functions.
-[debug] [2018-11-28T00:36:17.728Z] Fetching environment
-[debug] [2018-11-28T00:36:17.730Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1010316562828:getServerAppConfig  
+[debug] [2018-12-03T00:51:55.956Z] Fetching environment
+[debug] [2018-12-03T00:51:55.958Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1010316562828:getServerAppConfig  
  
-[debug] [2018-11-28T00:36:17.730Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1010316562828/clients/_:getWebAppConfig  
+[debug] [2018-12-03T00:51:55.958Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1010316562828/clients/_:getWebAppConfig  
  
-[debug] [2018-11-28T00:36:18.137Z] <<< HTTP RESPONSE 200
-[debug] [2018-11-28T00:36:18.138Z] Starting @google-cloud/functions-emulator
-[debug] [2018-11-28T00:36:18.210Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-03T00:51:56.438Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-03T00:51:56.439Z] Starting @google-cloud/functions-emulator
+[debug] [2018-12-03T00:51:56.461Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: ./public
 [info] ✔  hosting: Local server: http://localhost:5000
-[debug] [2018-11-28T00:36:19.707Z] Parsing function triggers
+[debug] [2018-12-03T00:51:58.021Z] Parsing function triggers
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
+[debug] [2018-12-05T00:33:56.043Z] ----------------------------------------------------------------------
+[debug] [2018-12-05T00:33:56.045Z] Command:       /Users/hirahara/.nodebrew/node/v10.2.0/bin/node /Users/hirahara/.nodebrew/current/bin/firebase serve
+[debug] [2018-12-05T00:33:56.045Z] CLI Version:   6.1.1
+[debug] [2018-12-05T00:33:56.045Z] Platform:      darwin
+[debug] [2018-12-05T00:33:56.045Z] Node Version:  v10.2.0
+[debug] [2018-12-05T00:33:56.046Z] Time:          Wed Dec 05 2018 09:33:56 GMT+0900 (JST)
+[debug] [2018-12-05T00:33:56.046Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-05T00:33:56.062Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-05T00:33:56.062Z] > authorizing via signed-in user
+[debug] [2018-12-05T00:33:56.062Z] [iam] checking project friendlychat-fc999 for permissions ["firebase.projects.get"]
+[debug] [2018-12-05T00:33:56.064Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-05T00:33:56.064Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-05T00:33:56.298Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-05T00:33:56.320Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-fc999:testIamPermissions  
+
+[debug] [2018-12-05T00:33:58.076Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-05T00:33:58.078Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-fc999  
+ 
+[debug] [2018-12-05T00:33:59.006Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/hirahara/Desktop/firebase_training/friendlychat/web-start'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-12-05T00:33:59.705Z] Fetching environment
+[debug] [2018-12-05T00:33:59.707Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1010316562828:getServerAppConfig  
+ 
+[debug] [2018-12-05T00:33:59.707Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1010316562828/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-05T00:34:00.310Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2018-12-05T00:34:00.515Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-05T00:34:00.515Z] Starting @google-cloud/functions-emulator
+[debug] [2018-12-05T00:34:02.081Z] Parsing function triggers
 [info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
