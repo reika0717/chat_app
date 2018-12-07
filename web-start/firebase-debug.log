@@ -68,3 +68,40 @@
 [debug] [2018-12-05T00:34:00.515Z] Starting @google-cloud/functions-emulator
 [debug] [2018-12-05T00:34:02.081Z] Parsing function triggers
 [info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
+[debug] [2018-12-07T00:42:36.909Z] ----------------------------------------------------------------------
+[debug] [2018-12-07T00:42:36.911Z] Command:       /Users/hirahara/.nodebrew/node/v10.2.0/bin/node /Users/hirahara/.nodebrew/current/bin/firebase serve
+[debug] [2018-12-07T00:42:36.911Z] CLI Version:   6.1.1
+[debug] [2018-12-07T00:42:36.911Z] Platform:      darwin
+[debug] [2018-12-07T00:42:36.911Z] Node Version:  v10.2.0
+[debug] [2018-12-07T00:42:36.911Z] Time:          Fri Dec 07 2018 09:42:36 GMT+0900 (JST)
+[debug] [2018-12-07T00:42:36.911Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-07T00:42:36.923Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-07T00:42:36.923Z] > authorizing via signed-in user
+[debug] [2018-12-07T00:42:36.923Z] [iam] checking project friendlychat-fc999 for permissions ["firebase.projects.get"]
+[debug] [2018-12-07T00:42:36.925Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-07T00:42:36.925Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-07T00:42:37.120Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-07T00:42:37.145Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-fc999:testIamPermissions  
+
+[debug] [2018-12-07T00:42:37.899Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-07T00:42:37.900Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-fc999  
+ 
+[debug] [2018-12-07T00:42:38.754Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/hirahara/Desktop/firebase_training/friendlychat/web-start'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-12-07T00:42:39.390Z] Fetching environment
+[debug] [2018-12-07T00:42:39.392Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1010316562828:getServerAppConfig  
+ 
+[debug] [2018-12-07T00:42:39.392Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1010316562828/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-07T00:42:39.802Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-07T00:42:39.802Z] Starting @google-cloud/functions-emulator
+[debug] [2018-12-07T00:42:40.107Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2018-12-07T00:42:41.364Z] Parsing function triggers
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
